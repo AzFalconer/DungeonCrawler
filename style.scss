@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Orbitron|Righteous|Exo|Mogra|Tangerine|Acme|OpenSans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+$pColor: white;
+$pFont: Acme, serif;
+* {box-sizing: border-box;}
+a {text-decoration: none; color: white;}
+i {color: white;}
+button {cursor: pointer; font-family: $pFont; font-size: 2.5vh; border-radius: 5px;}
+table {width: 100%; border: solid 5px black; border-radius: 10px; background-color: lightgrey;} // border-collapse:collapse;
+tr {width: 100%; background-color: lightgrey;} //border: none; border-spacing: 0; border-collapse:collapse; border-bottom: 0;
+th {background-color: lightgrey;}
+td {float: left; width: 2%; padding-bottom: 2%; background-color: darkgrey;} //border: 1px solid white;
+body {margin: 0 auto; padding: 1%; background-color: #515A5A;}
+.main {width: 100%; background-color: white; padding: 1vh; border-radius: 10px;}
+@media (min-width: 600px) {
+  .main {display: flex; justify-content: space-between;}
+}
+#leftSide{flex-basis: 79%; order: 1;}
+#rightSide{flex-basis: 20%; order: 2; height: 25vw;}
+.stats {float: left; font-family: $pFont; font-size: 1.25vw;}
+.user {background-color: darkgrey; background-image: url("https://www.redtailbooks.com/codeCamp/images/hero4.png"); background-repeat: no-repeat;background-size: 100%;}
+.dead {background-color: darkgrey; background-image: url("https://www.redtailbooks.com/codeCamp/images/dead2.png"); background-repeat: no-repeat;background-size: 100%;}
+.kobold {background-image: url("https://www.redtailbooks.com/codeCamp/images/kobold2.png"); background-repeat: no-repeat;background-size: 100%;}
+.goblin {background-image: url("https://www.redtailbooks.com/codeCamp/images/goblin2.png"); background-repeat: no-repeat;background-size: 100%;}
+.hobgoblin {background-image: url("https://www.redtailbooks.com/codeCamp/images/hobgoblin2.png"); background-repeat: no-repeat;background-size: 100%;}
+.ogre {background-image: url("https://www.redtailbooks.com/codeCamp/images/ogre2.png"); background-repeat: no-repeat; background-size: 100%;}
+.chest {background-image: url("https://www.redtailbooks.com/codeCamp/images/chest2.png"); background-repeat: no-repeat; background-size: 100%;}
+.orc {background-image: url("https://www.redtailbooks.com/codeCamp/images/orc2.png"); background-repeat: no-repeat; background-size: 100%;}
+.rat {background-image: url("https://www.redtailbooks.com/codeCamp/images/rat2.png"); background-repeat: no-repeat; background-size: 100%;}
+.empty {background-image: url("https://www.redtailbooks.com/codeCamp/images/floor.png"); background-repeat: no-repeat; background-size: 100%;}
+.wall {background-image: url("https://www.redtailbooks.com/codeCamp/images/wall2.png"); background-repeat: no-repeat;background-size: 100%;}
+#message {display: none; position: absolute; left: 20%; top: 20%; width: 60%; background-color: lightgrey; padding: 1vh; border: solid 5px black; border-radius: 10px; text-align: center; font-family: $pFont; z-index: 2;}
+#headline {text-align: center; font-size: 2vw;}
+#messageText {font-size: 1.5vw;}
+#displayHeader {text-align: center; font-size: 1.125vw;}
+#displayDiag {width: 100%; background-color: lightgrey; padding: 1vh; border: solid 5px black; border-radius: 10px; font-family: $pFont;}
+#displayDiagText {overflow-y: auto; height: 100%; font-size: .9vw;}
+.fow {background-color: black; color: black;background-image: url("https://www.redtailbooks.com/codeCamp/images/black.png"); background-repeat: no-repeat; background-size: 100%;}
+.footer {position: fixed; bottom: 5px; width: 100%; height: auto; margin-top: 40px; text-align: center; font-family: $pFont;  font-size: 1.5vh;}
